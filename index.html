@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  margin: 10% auto;
+  background-color: transparent;
+  width: 400px;
+  height: 450px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #F52437;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #F52437;
+  color: white;
+  transform: rotateY(180deg);
+}
+ .btn
+{
+  border-style: none;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  color: #F52437;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 25px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 6px 3px rgba(0,0,0,.5);
+}
+a
+{
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="au.png" alt="Avatar" style="width:200px;height:200px; margin-top: 80px; border-radius: 50%; border-color: white; border-style: solid;background-color: #000;"><p style="color: #fff; font-size: 18px; font-family: verdana; margin-bottom: 30px;"><b>MELANIE KLARK</b><br>Web Designer & Content Writer</p>
+ 
+     </div>
+    <div class="flip-card-back">
+      <h2>We Design For You:</h2> 
+      <ul style="text-align: left; margin-left: 15%; margin-bottom: 100px;">
+        <li>Digital Visiting Cards</li>
+        <li>Digital Birthday Cards</li>
+        <li>Digital Marriage Cards</li>
+        <li>Digital Business Cards</li>
+        <li>Digital Portfolio</li>
+        <li>Resume</li>
+      </ul>
+      <a href="tel:8287833426" class="fa fa-phone" style="font-size:20px; color:#fff; padding: 5px;"></a>
+  <a href="mailto:dhan9n@gmail.com" class="fa fa-envelope" style="font-size:20px; color:#fff; padding: 5px;"></a>
+   <a href="multipurpose/index.html" class="fa fa-globe" style="font-size:20px; color:#fff; padding: 5px;"></a>
+   <hr style="height:1px; border-width:0; width: 50%; background-color:#fff">
+   <i class="fa fa-twitter" style="font-size:20px; color:#fff; padding: 5px;"></i>
+   <i class="fa fa-linkedin" style="font-size:20px; color:#fff; padding: 5px;"></i>
+   <i class="fa fa-facebook" style="font-size:20px; color:#fff; padding: 5px;"></i>
+   <i class="fa fa-pinterest" style="font-size:20px; color:#fff; padding: 5px;"></i>
+
+    <div> <button class="btn"><a href="https://api.whatsapp.com/send?phone=7518839938" class="fa fa-whatsapp" style="color: #F52437;"></a></button></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
